@@ -1,0 +1,17 @@
+{
+  "name": "trulia",
+  "version": "0.0.0",
+  "description": "trulia application.",
+  "main": "server.js",
+  "author": "Raji",
+  "dependencies": {
+    "body-parser": "~1.5.2",
+    "csvtojson": "^1.0.2",
+    "express": "~4.7.2"
+  },
+  "devDependencies": {
+    "jasmine": "2.4.1",
+    "karma": "0.13.10"
+    
+  }
+}
