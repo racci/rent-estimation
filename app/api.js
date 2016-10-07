@@ -59,7 +59,8 @@ exports.checkPrice = function (req, res){
 
 			// average price for per common bedrooms and bathrooms sets
 			avg_price[key] = parseInt(price[key] / count[key]);
-		}	
+		}
+		// Return average of prices	
 		return avg_price;
 	};		
 }
