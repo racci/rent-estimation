@@ -3,7 +3,7 @@ var app = angular.module("rentApp", []);
 
 app.controller("rentCtrl", function($scope, $http) {
     $scope.price = null;
-    $scope.test = 5;
+
     $scope.checkData = function(){
 
 		// when submitting form data, send the object to the node API
@@ -22,5 +22,4 @@ app.controller("rentCtrl", function($scope, $http) {
 				console.log('Error: ' + data);
 			});
     }
-
 });
