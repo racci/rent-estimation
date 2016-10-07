@@ -8,12 +8,9 @@
 
         <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
         <link rel="stylesheet" type="text/css" href="/style.css" />
-
     </head>
-
-    
+ 
     <body>
-
     	<center>
     		<h3>Welcome to Rent Estimation Application</h3>
     	</center>
@@ -27,63 +24,60 @@
 						<label for="apartment" class="col-sm-2 control-label">Apartment</label>
 						<div class="col-sm-6">
 							<input type="text" 
-									ng-model="formData.apartment" 
-									class="form-control" 
-									id="apartment" 
-									name="formData.apartment" 
-									placeholder="Apartment Name">
+								ng-model="formData.apartment" 
+								class="form-control" 
+								id="apartment" 
+								name="formData.apartment" 
+								placeholder="Apartment Name">
 						</div>	
 					</div>
-
 	      			<div class="form-group">
 						<label for="bedroom" class="col-sm-2 control-label">Bedroom</label>
 						<div class="col-sm-6">
 							<input type="number" 
-									ng-model="formData.bedroom" 
-									min="0" 
-									class="form-control" 
-									id="bedroom" 
-									name="formData.bedroom" 
-									placeholder="Number">
+								ng-model="formData.bedroom" 
+								min="0" 
+								class="form-control" 
+								id="bedroom" 
+								name="formData.bedroom" 
+								placeholder="Number">
 						</div>	
-					</div>
-					
+					</div>				
 					<div class="form-group">
 						<label for="bathroom" class="col-sm-2 control-label">Bathroom</label>
 						<div class="col-sm-6">
 							<input type="number" 
-							  	    ng-model="formData.bathroom" 
-							  	    min="0" 
-							  		class="form-control" 
-							  		id="bathroom" 
-							  		name="formData.bathroom"
-							  		placeholder="Number">
+						  	    ng-model="formData.bathroom" 
+						  	    min="0" 
+						  		class="form-control" 
+						  		id="bathroom" 
+						  		name="formData.bathroom"
+						  		placeholder="Number">
 						</div>
 					</div>
 					<div class="form-group">
 						<label for="sqft" class="col-sm-2 control-label">Square Feet</label>
 						<div class="col-sm-6">
 						  	<input type="number" 
-						  			ng-model="formData.sqrt" 
-						  			min="0" 
-						  			class="form-control" 
-						  			id="sqft"
-						  			name="formData.sqrt" 
-						  			placeholder="Number">
+					  			ng-model="formData.sqrt" 
+					  			min="0" 
+					  			class="form-control" 
+					  			id="sqft"
+					  			name="formData.sqrt" 
+					  			placeholder="Number">
 						</div>
 					</div>
 					<div class="form-group">
 						<div class="col-sm-offset-2 col-sm-10">
 							<button type="submit" 
-								    class="btn btn-primary" 
-								    ng-disabled="(formData.bedroom=== undefined || formData.bathroom === undefined || formData.sqrt===undefined)" 
-								    ng-click="checkData()">
+							    class="btn btn-primary" 
+							    ng-disabled="(formData.bedroom=== undefined || formData.bathroom === undefined || formData.sqrt===undefined)" 
+							    ng-click="checkData()">
 								Check Price ($)
 							</button>
 						</div>
 					</div>
 				</form>
-
 
 				<div id="result_message" ng-if="price">
 					<h4>Dear Landlord,</h4>
@@ -97,12 +91,9 @@
 						No matches data!
 					</div>
 				</div>
-				
-
 	      	</div>
 	    </div>
-
-      
+     
 	    <!-- Include script-->
       	<script src="app.js"></script>
     </body>
